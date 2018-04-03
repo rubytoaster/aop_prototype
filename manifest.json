@@ -1,0 +1,29 @@
+{ 
+  "name": "AoP PWA Prototype",
+  "short_name": "AoP PWA",
+  "description": "Demonstrate PWA",
+  "start_url": "index.html",
+  "icons": [
+    {
+      "src": "images/icons/android-launchericon-128-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/android-launchericon-144-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/android-launchericon-192-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/android-launchericon-256-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]  
+}
+

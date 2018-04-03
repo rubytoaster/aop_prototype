@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <link rel="manifest" href="manifest.json" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="AoP PWA Prototype">  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles/aop_bs.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="images/icons/ios-appicon-57-57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icons/ios-appicon-72-72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icons/ios-appicon-114-114.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="images/icons/ios-appicon-152-152.png" />
+  </head>
+  <body style="background: #ececec;">
+
+
+<!-- Main Menu Navbar -->
+<nav class="navbar navbar-expand navbar-dark d-none" id="main_navbar" style="background:#0e0e3f;height:54px;padding: 0px 1px 0px 6px; ">
+    <a class="navbar-brand" href="javascript:(loadHome())" style="border: 0px solid green;padding:0px;margin-top:12px;">
+      <span class="fa fa-home d-none" id="home_icon" style="font-size:26px;color:#DCDCDC;padding:0px;"></span>
+   </a>
+
+<div class="navbar-collapse justify-content-center" style="border: 0px solid green;padding:0px;">
+     <img src="images/aop_circle_small.png" style="border: 0px solid orange;" width="80" height="45"  alt="">
+</div>
+     <ul class="navbar-nav"  style="border: 0px solid red;padding: 0px 7px 0px 30px;;margin-top:12px;">
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" style="padding:0px;">
+          <span class="fa fa-bars" style="font-size:26px;color:#DCDCDC;padding:0px;padding-right:12px;"></span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" style="background:#0e0e3f;padding: 0px 0px 0px 0px;margin-top:6px;">
+          <a class="dropdown-item" style="color:grey;padding: 15px 0px 15px 8px;" href="#">Wall Walks</a>
+          <a class="dropdown-item" style="color:#DCDCDC;padding: 15px 0px 15px 8px;" href="javascript:(loadCont('templ'))">How To's</a>
+          <a class="dropdown-item" style="color:#DCDCDC;padding: 15px 0px 15px 8px;" href="javascript:(loadCont('def'))">Key Definitions</a>
+          <a class="dropdown-item" style="color:#DCDCDC;padding: 15px 0px 15px 8px;" href="javascript:(loadCont('res'))">Resources</a>
+          <a class="dropdown-item" style="color:#DCDCDC;padding: 15px 0px 15px 8px;" href="javascript:(loadCont('calc'))">Calculator</a>
+          <a class="dropdown-item" style="color:#DCDCDC;padding: 15px 0px 15px 8px;" href="javascript:(loadCont('train'))">Training</a>
+          <a class="dropdown-item" style="color:#DCDCDC;padding: 15px 0px 15px 8px;" href="javascript:(loadGame())">Game</a>
+          <a class="dropdown-item" style="color:#DCDCDC;padding: 15px 0px 15px 8px;" href="javascript:(loadCont('animsvg'))">Animation</a>
+        </div>
+      </li>
+     </ul>
+</nav>
+
+
+
+<div id="app_cont">
+    <div class="loader">
+     <div>Loading App</div> 
+    <svg viewBox="0 0 32 32" width="32" height="32">
+      <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+    </svg>
+  </div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- j <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+    <script src="scripts/aop.js"></script>
+    <script src="scripts/flappyaop.js"></script>
+
+<script>
+
+
+$(function(){
+
+
+$("#app_cont").load("/content/login_cont.html");
+//setTimeout(loadLogin, 3000);
+
+}); 
+
+</script>
+  </body>
+</html>

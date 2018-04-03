@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand navbar-light" style="margin-top:1px;background:#3366cc;height:45px;color:white;padding: 0px; ">
+    <a class="navbar-brand" href="#" style="padding-right:2px;margin:0px;">
+      <span class="fa fa-calculator" style="color:white;font-size:26px;padding-left:8px;"></span>
+   <span class="navbar-text" style="color:white;padding:0px;border: 0px solid yellow;font-size:16px;">LL for Fl</span>
+   </a>
+</nav>
+<div style="background:white;">
+
+
+<div class="container" style="margin-top:20px;">
+  <div class="row">
+    <div class="col-12" style="border: 0px solid red;font-weight:bold;">Enter 2 known values to calculate:</div>
+  </div>
+  <div class="row" style="margin-top:8px;">
+    <div class="col-2" style="border: 0px solid red;">
+      Wp = 
+    </div>
+    <div class="col-4" style="border: 0px solid red;">
+      <input type="number" step="any" id="wp_num" class="form-control" style="border: 1px solid grey;">
+    </div>
+    <div class="col-6" style="border: 0px solid red;">
+      Calculated Value = <span id="calc_val" style="font-weight:bold;">0</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-2" style="border: 0px solid red;">
+      Th_p = 
+    </div>
+    <div class="col-4" style="border: 0px solid red;">
+      <input type="number" step="any" id="thp_num"class="form-control" style="border: 1px solid grey;">
+    </div>
+    <div class="col-6" style="border: 0px solid red;">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-2" style="border: 0px solid red;">
+      Fl_t = 
+    </div>
+    <div class="col-4" style="border: 0px solid red;">
+      <input type="number" step="any" id="flt_num" class="form-control" style="border: 1px solid grey;">
+    </div>
+    <div class="col-6" style="border: 0px solid red;">
+      <button class="btn btn-primary btn-lg" style="background:red;border: 1px solid red;" 
+      onclick="$('#calc_val').html( $('#wp_num').val() + $('#thp_num').val()  + $('#flt_num').val())"
+
+      >Calculate</button>
+    </div>
+  </div>
+</div>
+
+</div>
